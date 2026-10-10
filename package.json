@@ -6,22 +6,25 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "@remotion/cli": "4.0.533",
-    "@remotion/zod-types": "4.0.533",
     "@remotion/animation-utils": "4.0.533",
+    "@remotion/cli": "4.0.533",
+    "@remotion/google-fonts": "4.0.533",
     "@remotion/layout-utils": "4.0.533",
+    "@remotion/media": "4.0.533",
     "@remotion/media-utils": "4.0.533",
+    "@remotion/tailwind-v4": "4.0.533",
+    "@remotion/transitions": "4.0.533",
+    "@remotion/zod-types": "4.0.533",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "remotion": "4.0.533",
-    "zod": "4.5.4",
-    "@remotion/tailwind-v4": "4.0.533",
-    "tailwindcss": "4.0.0"
+    "tailwindcss": "4.0.0",
+    "zod": "4.5.4"
   },
   "devDependencies": {
+    "@remotion/captions": "4.0.533",
     "@remotion/eslint-config-flat": "4.0.533",
     "@remotion/install-whisper-cpp": "4.0.533",
-    "@remotion/captions": "4.0.533",
     "@types/react": "19.2.7",
     "@types/web": "0.0.166",
     "eslint": "9.39.5",
@@ -33,7 +36,10 @@
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
-    "create-subtitles": "node sub.mjs"
+    "create-subtitles": "node sub.mjs",
+    "generate-slide-content": "node scripts/generate-slide-content.mjs",
+    "generate-voiceover": "node scripts/generate-voiceover.mjs",
+    "create-video": "node scripts/create-video.mjs"
   },
   "sideEffects": [
     "*.css"
